@@ -1,0 +1,107 @@
+body {
+    font-family: Georgia, serif;
+
+}
+.logo {
+    width: 200px;
+}
+
+.wrapper {
+    width: 500px;
+    text-align: right;
+}
+
+div.rateTable {
+    font-family: Georgia, serif;
+    border: 2px solid #FFFFFF;
+    background-color: #EEEEEE;
+    text-align: center;
+    border-collapse: collapse;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.rateTable .rateTableCell, .rateTable .rateTableHead {
+    border: 0px solid #000000;
+    padding: 3px 4px;
+    width: 50%
+}
+
+.rateTable .rateTableBody .rateTableCell {
+    font-size: 16px;
+}
+
+.rateTable .rateTableRow:nth-child(even) {
+    background: #FFFFFF;
+}
+
+.rateTable .rateTableHeading {
+    background: #FFFFFF;
+    border-bottom: 2px solid #333333;
+}
+
+.rateTable .rateTableHeading .rateTableHead {
+    font-size: 17px;
+    font-weight: bold;
+    color: #333333;
+    text-align: center;
+}
+
+.rateTable .tableFootStyle {
+    font-size: 14px;
+}
+
+.rateTable{ display: table; }
+.rateTableRow { display: table-row; }
+.rateTableHeading { display: table-header-group; }
+.rateTableCell, .rateTableHead { display: table-cell; }
+.rateTableHeading { display: table-header-group; }
+.rateTableFoot { display: table-footer-group; }
+.rateTableBody { display: table-row-group; }
+
+
+.button {
+    position: relative;
+    padding: 10px 15px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    font-size: 15px;
+    margin: 10px 10px;
+    color: #000000;
+}
+.button:active {
+    background-color: #000000;
+    color: #ffffff;
+}
+.button::after, .button::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    border: 2px solid;
+    transition: all 0.6s ease;
+    border-radius: 2px;
+}
+.button::after {
+    bottom: 0;
+    right: 0;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: #000000;
+    border-right-color: #000000;
+}
+.button::before {
+    top: 0;
+    left: 0;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-top-color: #000000;
+    border-left-color: #000000;
+}
+.button:hover:after, .button:hover:before {
+    width: 100%;
+    height: 100%;
+}
